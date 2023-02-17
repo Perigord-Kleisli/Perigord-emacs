@@ -1,0 +1,4 @@
+* Perigord-Emacs
+
+** Dependencies
+- Emacs 28+
