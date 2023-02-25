@@ -6,6 +6,7 @@
 ;; use 'M-x doom/reload'.
 
 (package! org-modern)
+(package! org-appear)
 
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
