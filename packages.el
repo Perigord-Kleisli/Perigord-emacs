@@ -7,7 +7,7 @@
 
 (package! org-modern)
 (package! org-appear)
-
+(package! flycheck-grammarly)
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
