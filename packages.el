@@ -7,6 +7,8 @@
 
 (package! org-modern)
 (package! org-appear)
+(package! org-ref)
+(package! ivy-bibtex)
 (package! flycheck-grammarly)
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
