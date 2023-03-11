@@ -110,3 +110,7 @@
   '(outline-8 :weight semi-bold)
   '(outline-9 :weight semi-bold))
 (setq x-select-enable-clipboard nil)
+
+(eval-after-load "preview"
+  '(add-to-list 'preview-default-preamble "\\PreviewEnvironment{tikzpicture}" t))
+(setq org-latex-create-formula-image-program 'imagemagick)

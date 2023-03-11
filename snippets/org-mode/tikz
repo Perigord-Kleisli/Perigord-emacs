@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: tikz
+# uuid: tikz
+# key: tikz
+# --
+#+name: $1
+#+header: :results file drawer
+#+header: :file $2
+#+header: :imagemagick yes
+#+header: :fit yes :imoutoptions -geometry 400 :iminoptions -density 2200
+#+header: :headers '("\\usepackage{tikz}")
+#+begin_src latex
+\begin{tikzpicture}
+`%`$0
+\end{tikzpicture}
+#+end_src
