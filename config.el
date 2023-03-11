@@ -97,3 +97,16 @@
         'fixed-pitch
         (face-attribute face :inherit))))
     (list 'org-code 'org-block 'org-table 'line-number 'line-number-current-line)))
+(setq org-highlight-latex-and-related '(native latex script entities))
+(add-hook 'org-mode-hook #'+org-pretty-mode)
+(setq org-latex-pdf-process '("LC_ALL=en_US.UTF-8 latexmk -f -pdf -%latex -shell-escape -interaction=nonstopmode -output-directory=%o %f"))
+(custom-set-faces!
+  '(outline-1 :weight extra-bold :height 1.25)
+  '(outline-2 :weight bold :height 1.15)
+  '(outline-3 :weight bold :height 1.10)
+  '(outline-4 :weight semi-bold :height 1.06)
+  '(outline-5 :weight semi-bold :height 1.03)
+  '(outline-6 :weight semi-bold)
+  '(outline-8 :weight semi-bold)
+  '(outline-9 :weight semi-bold))
+(setq x-select-enable-clipboard nil)
