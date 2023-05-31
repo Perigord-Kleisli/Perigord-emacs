@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: huge
+# uuid: huge
+# key: huge
+# --
+\begin{huge}
+`%`$0
+\end{huge}
