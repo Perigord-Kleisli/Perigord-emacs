@@ -80,6 +80,12 @@
 (with-eval-after-load 'flycheck
   (flycheck-grammarly-setup))
 
+(setq org-novelist-language-tag "en-GB")
+(setq org-novelist-author "Kevo \"Piedmont\" Akimbo")
+(setq org-novelist-author-email "perigordtruffle7318@gmail.com")
+(setq org-novelist-automatic-referencing-p t)
+
+
 (defun my-adjoin-to-list-or-symbol (element list-or-symbol)
   (let ((list (if (not (listp list-or-symbol))
                   (list list-or-symbol)

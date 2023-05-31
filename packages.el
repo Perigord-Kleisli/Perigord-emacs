@@ -16,6 +16,8 @@
 (package! org-cite-csl-activate :recipe (:host github :repo "andras-simonyi/org-cite-csl-activate") :pin "9e68d9204469c674f49a20bdf7ea85da4f4bf720")
 (package! org-auctex
           :recipe (:host github :repo "karthink/org-auctex"))
+(package! org-novelist
+  :recipe (:host github :repo "sympodius/org-novelist"))
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
