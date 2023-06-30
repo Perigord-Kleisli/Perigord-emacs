@@ -121,3 +121,16 @@
   '(add-to-list 'preview-default-preamble "\\PreviewEnvironment{tikzpicture}" t))
 (setq org-latex-create-formula-image-program 'imagemagick)
 (setq confirm-kill-emacs nil)
+
+
+(defun vterm-send-return-fix ()
+  "Send 'C-m' to the libvterm."
+  (interactive)
+  (when vterm--term
+    (if (vterm--get-icrnl vterm--term)
+        (process-send-string vterm--process "\C-o")
+        (process-send-string vterm--process "\C-o"))))
+(add-hook 'vterm-mode-hook
+ (lambda ()
+   (map! (:map vterm-mode-map
+          :i [return] #'vterm-send-return-fix))))
